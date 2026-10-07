@@ -70,15 +70,14 @@ console.log(updatewebhooks)
 import { ResendSdkSDK } from '@voxgig-sdk/resend-sdk'
 
 const client = new ResendSdkSDK({
-  apikey: process.env.RESEND_SDK_APIKEY,
+  apikey: process.env.RESEND_API_KEY,
 })
 
 
-// Load a specific automationrun (returns a AutomationRun)
-const automationrun = await client.AutomationRun().load({
-  automation_id: 'example_automation_id',
-  id: 'example_id',
-})
+// List domains from your Resend account
+const domains = await client.Domain().list()
+
+console.log(domains)
 console.log(automationrun)
 ```
 
