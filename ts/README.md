@@ -12,7 +12,7 @@ predictable and low-friction for both humans and AI agents.
 
 ## Install
 This package is not yet published to npm. Install it from the GitHub
-release tag (`ts/vX.Y.Z`, see [Releases](https://github.com/aksharma02/resend-sdk/releases)), or from a
+release tag (https://github.com/aksharma02/resend-sdk/releases)), or from a
 clone, which carries the compiled `dist/`:
 
 ```bash
