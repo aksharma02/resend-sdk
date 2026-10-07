@@ -36,7 +36,7 @@ const client = new ResendSdkSDK({
 })
 ```
 
-### 3. Load an automationrun
+### 2. Load an automationrun
 
 AutomationRun is nested under automation, so provide the `automation_id`.
 `load()` returns the entity directly and throws on failure:
@@ -53,7 +53,7 @@ try {
 }
 ```
 
-### 4. Create, update, and remove
+### 3. Create, update, and remove
 
 ```ts
 // Create — returns the created AddContactToSegmentResponseSuccess ENTITY (.data() for the record)
@@ -65,7 +65,7 @@ const created = await client.AddContactToSegmentResponseSuccess().create({
 ```
 
 
-## Error handling
+## 4. Error handling
 
 Entity operations reject on failure, so wrap them in `try` / `catch`:
 
